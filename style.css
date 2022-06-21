@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: #aed9e0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-shadow: 0 0 1px black;
+}
+.header {
+  padding-top: 13vh;
+  height: 420px;
+  background-image: url("images/soacha.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+#title {
+  z-index: 1;
+  font-family: "Joan", serif;
+  font-size: 2.7rem;
+}
+
+#subtitle {
+  z-index: 1;
+  font-family: "Joan", serif;
+}
+.activities-section {
+  padding: 40px 5px 40px;
+  background-color: #faf3dd;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.activity-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  padding: 8px;
+  line-height: 1.3;
+}
+.guide-section {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  border: 1px solid black;
+  padding: 1.2rem;
+  background-color: #9f86c0;
+  border-radius: 12px;
+  box-shadow: 4px 4px black;
+}
+
+.guide-section:hover {
+  transform: scale(1.1);
+}
+.guide-img {
+  width: 100px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.guide-details {
+  width: 50%;
+}
+
+.guide-details h3 {
+  margin-bottom: 12px;
+}
+.guide-details p {
+  font-size: 0.8rem;
+}
+
+.tourist-site {
+  line-height: 1.4;
+}
+.tourist-site p {
+  width: 600px;
+}
+.tequendama-jump {
+  background-color: #faf3dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.rock-art-img,
+.tequendama-img {
+  margin: 20px 0 40px;
+  border-radius: 8px;
+  width: 70%;
+  height: 300px;
+}
+
+.rock-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.final {
+  background-image: url("images/soacha2.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.final::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+#final-title {
+  z-index: 1;
+  font-family: "Joan", serif;
+  font-size: 2.7rem;
+  margin-bottom: 7vh;
+}
+
+/* @media queries */
+
+@media (min-width: 900px) {
+  .header {
+    height: 95vh;
+    padding-top: 20vh;
+  }
+  #title {
+    font-size: 4.2rem;
+  }
+  #subtitle {
+    font-size: 2rem;
+  }
+  .tequendama-img,
+  rock-art-img {
+    width: 600px;
+  }
+
+  .tourist-site {
+    display: flex;
+    justify-content: center;
+  }
+  .tourist-site p {
+    width: 70%;
+  }
+  .tequendama-jump {
+    border-right: none;
+    width: 50%;
+    border-right: 6px solid black;
+  }
+  .rock-art {
+    width: 50%;
+  }
+  .rock-art-img {
+    margin-top: 40px;
+  }
+}
